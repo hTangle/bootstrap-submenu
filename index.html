@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-submenu.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-submenu.js"></script>
+    <script src="js/popper.min.js"></script>
+</head>
+<div class="dropdown">
+    <button class="btn btn-default" type="button" data-toggle="dropdown">
+        Dropdown
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+        <li><a tabindex="0">Action</a></li>
+        <li class="dropdown-submenu">
+            <a tabindex="0" data-toggle="dropdown">二级菜单</a>
+            <ul class="dropdown-menu">
+                <li class="dropdown-header">Dropdown header</li>
+                <li><a tabindex="0">二级菜单项</a></li>
+                <li class="disabled"><a tabindex="0">二级菜单项</a></li>
+                <li><a tabindex="0">二级菜单项</a></li>
+            </ul>
+        </li>
+        <li><a tabindex="0">一级菜单项</a></li>
+        <li class="divider"></li>
+        <li><a tabindex="0">一级菜单项</a></li>
+    </ul>
+</div>
+<body>
+<script type="text/javascript">
+$('.dropdown-submenu > a').submenupicker();
+
+</script>
+</body>
+
+</html>
